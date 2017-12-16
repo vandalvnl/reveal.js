@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Reveal JS</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab, fork by Allan Garcez">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/impress.css" id="theme">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="plugin/title-footer/title-footer.css">
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <section class="onleft">
+            <h1>Reveal.js</h1>
+            <h3>The HTML Presentation Framework</h3>
+            <p>
+              <small>Created by
+                <a href="http://hakim.se">Hakim El Hattab</a>. Fork by:
+                <a href="http://vandalvnl.github.io/">Garcez</a>
+              </small>
+            </p>
+          </section>
+          <section>
+            ToDo
+            <ul>
+              <li>New CSS Themes</li>
+              <li>Chart Themes</li>
+              <li>Mouse Click Transition without bug links</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="justify">
+          <p>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa commodi, dicta odit minima
+              velit, voluptatum similique dolor, sed eius dolorum quas aliquam dignissimos neque corrupti natus voluptatem
+              esse fugiat ipsa!
+            </div>
+          </p>
+        </section>
+
+        <section>
+        <canvas data-chart="pie">
+          <h2>Navegadores</h2>
+          <!--
+        {
+         "data": {
+          "labels": ["Chrome","Firefox"," Opera","Safari"],
+          "datasets": [
+           {
+            "data":[1250,1000,750,500],
+            "label":"My first dataset","backgroundColor":["#121212", "#2a54c1", "#c12a2a","#48c12a"]
+           }
+          ]
+         },
+         "options": { "responsive": "true" }
+        }
+        -->
+        </canvas>
+        </section>
+        <section data-state="no-toc-progress">
+          <h3 class="no-toc-progress">Reveal.js-Title-Footer</h3>
+          <h4>Footer <strong>don't</strong> showing title for Reveal.js HTML presentations</h4>
+          <p>
+            <small>Thanks to create plugin
+              <a href="https://github.com/e-gor">Igor Leturia
+                <em>e-gor</em>
+              </a> /
+              <a href="http://twitter.com/ileturia">@ileturia</a> /
+              <a href="http://eibar.org/blogak/e-gorblog">http://eibar.org/blogak/e-gorblog</a>
+            </small>
+          </p>
+        </section>
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <!-- Use this script to active mouse click -->
+		<!-- <script src="js/mouse-click.js"></script> -->
+    <script>
+      Reveal.initialize({
+        width: 1280,
+        height: 720,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        controlsLayout: 'bottom-right', // edges or bottom-right
+        mouseWheel: true,
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/title-footer/title-footer.js',
+            async: true,
+            callback: function () {
+              title_footer.initialize(title = "Awesome Footer", background = "transparent", hrefLink =
+                "https://github.com/vandalvnl/reveal.js");
+            }
+          },
+          {
+            src: 'plugin/chart/chart.min.js'
+          },
+          {
+            src: 'plugin/chart/csv2chart.js'
+          }
+        ],
+      });
+      Reveal.configure({
+        slideNumber: 'h.v'
+      });
+    </script>
+  </body>
+</html>

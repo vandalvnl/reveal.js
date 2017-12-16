@@ -57,7 +57,7 @@
 			controlsTutorial: true,
 
 			// Determines where controls appear, "edges" or "bottom-right"
-			controlsLayout: 'bottom-right',
+			controlsLayout: 'edges',
 
 			// Visibility rule for backwards navigation arrows; "faded", "hidden"
 			// or "visible"
@@ -67,13 +67,13 @@
 			progress: true,
 
 			// Display the page number of the current slide
-			slideNumber: false,
+			slideNumber: true,
 
 			// Determine which displays to show the slide number on
 			showSlideNumber: 'all',
 
 			// Push each slide change to the browser history
-			history: false,
+			history: true,
 
 			// Enable keyboard shortcuts for navigation
 			keyboard: true,
@@ -136,10 +136,10 @@
 			autoSlideMethod: null,
 
 			// Enable slide navigation via mouse wheel
-			mouseWheel: false,
+			mouseWheel: true,
 
 			// Apply a 3D roll to links on hover
-			rollingLinks: false,
+			rollingLinks: true,
 
 			// Hides the address bar on mobile devices
 			hideAddressBar: true,
@@ -157,10 +157,10 @@
 			focusBodyOnPageVisibilityChange: true,
 
 			// Transition style
-			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transition: 'fade', // none/fade/slide/convex/concave/zoom
 
 			// Transition speed
-			transitionSpeed: 'default', // default/fast/slow
+			transitionSpeed: 'slow', // default/fast/slow
 
 			// Transition style for full page slide backgrounds
 			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom

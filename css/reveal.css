@@ -43,7 +43,7 @@ body {
 
 body {
   position: relative;
-  line-height: 1;
+  line-height: 1.13;
   background-color: #fff;
   color: #000; }
 
@@ -267,14 +267,15 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 2.6em;
+    width: 2em;
     height: 0.5em;
     border-radius: 0.25em;
     background-color: currentColor;
     transition: all 0.15s ease, background-color 0.8s ease;
     -webkit-transform-origin: 0.2em 50%;
             transform-origin: 0.2em 50%;
-    will-change: transform; }
+    will-change: transform;
+  }
   .reveal .controls .controls-arrow {
     position: relative;
     width: 3.6em;
@@ -421,7 +422,7 @@ body {
 .reveal .progress {
   position: absolute;
   display: none;
-  height: 3px;
+  height: 2px;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -457,8 +458,9 @@ body {
   font-size: 12px;
   line-height: 1;
   color: #fff;
+  opacity: 0.5;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 5px; }
+  padding: 3px; }
 
 .reveal .slide-number-delimiter {
   margin: 0 3px; }
@@ -503,7 +505,7 @@ body {
 .reveal .slides > section > section {
   display: none;
   position: absolute;
-  width: 100%;
+  min-width: 100%;
   padding: 20px 0px;
   pointer-events: auto;
   z-index: 10;
@@ -946,7 +948,7 @@ body {
   visibility: hidden;
   opacity: 0;
   z-index: 100;
-  transition: all 1s ease; }
+  transition: all 1.5s ease; }
 
 .reveal.paused .pause-overlay {
   visibility: visible;
@@ -1260,6 +1262,11 @@ body {
 /*********************************************
  * LINK PREVIEW OVERLAY
  *********************************************/
+ .reveal section img {
+   border: none;
+   box-shadow: none;
+ }
+
 .reveal .overlay {
   position: absolute;
   top: 0;
@@ -1553,3 +1560,31 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+/*********************************************
+ * SLIDE STYLE
+ *********************************************/
+.reveal > .slides > section .onleft {
+  width: 100%;
+  word-wrap: break-word;
+  text-align: left;
+  text-justify: kashida;
+  text-overflow:clip;
+}
+
+.reveal > .slides > .justify {
+  width: 100%;
+  word-wrap: break-word;
+  text-align: justify;
+  text-justify: kashida;
+  text-overflow:clip;
+}
+
+/*********************************************
+ * FOOTER STYLE
+ *********************************************/
+
+#title-footer {
+  width: 100%;
+  text-align: center;
+}
