@@ -10,7 +10,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/font-awesome/css/font/font-awesome.min.css">
     <link rel="stylesheet" href="css/theme/impress.css" id="theme">
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -29,7 +28,11 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
+
           <section class="onleft">
+            <aside class="notes">
+              Starting with notes
+            </aside>
             <h1>Reveal.js</h1>
             <h3>The HTML Presentation Framework</h3>
             <p>
@@ -39,6 +42,7 @@
               </small>
             </p>
           </section>
+
           <section>
             <h3>ToDo</h3>
             <ul>
@@ -47,17 +51,113 @@
               <li>Mouse Click Transition without bug links</li>
             </ul>
           </section>
+
         </section>
 
-        <section class="justify">
-          <p>
-            <h2>Mussum Ipsum</h2>
-            <div>
-              Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat
-              odio. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mim que
-              vai caçá sua turmis! Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-            </div>
-          </p>
+        <section>
+
+          <section class="justify">
+            <p>
+              <h2>Mussum Ipsum</h2>
+              <div>
+                Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat
+                odio. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mim que
+                vai caçá sua turmis! Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+              </div>
+            </p>
+          </section>
+
+          <section class="onleft">
+            <p>
+              <h2>Mussum Ipsum</h2>
+              <div>
+                Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat
+                odio. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mim que
+                vai caçá sua turmis! Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+              </div>
+            </p>
+          </section>
+
+          <section>
+            <p>
+              <h2>Mussum Ipsum
+                <small>Do nothing to center</small>
+              </h2>
+              <div>
+                Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat
+                odio. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mim que
+                vai caçá sua turmis! Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+              </div>
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <h2>Interconections</h2>
+          <ul>
+            <li>
+              <a href="#/5">Go to slide 5</a>
+            </li>
+            <li>
+              <a href="#/awesome">Go to neasted list</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Fragments</h3>
+          <span class="fragment fade-in">
+            <li class="fragment fade-out">I'll fade in, then out</li>
+          </span>
+          <li class="fragment grow">grow</li>
+          <li class="fragment shrink">shrink</p>
+            <li class="fragment fade-out">fade-out</li>
+            <li class="fragment highlight-current-blue">highlight-blue</li>
+            <li class="fragment highlight-current-red">highlight-red</li>
+            <li class="fragment highlight-current-green">highlight-green</li>
+        </section>
+
+        <section>
+          <section>
+            <h3>List Examples</h3>
+            <ol>
+              <li>New CSS Themes</li>
+              <ul>
+                <li>Cascade List</li>
+              </ul>
+              <li>Chart Themes</li>
+              <ul>
+                <li>Cascade List</li>
+              </ul>
+              <li>Mouse Click Transition without bug links</li>
+              <ul>
+                <li>Cascade List</li>
+                <li>Cascade List</li>
+              </ul>
+            </ol>
+          </section>
+
+          <section id="awesome">
+            <h3>Neasted Count List</h3>
+            <ol class="ol">
+              <li class="li">one</li>
+              <li class="li">two
+                <ol class="ol">
+                  <li class="li">two.one</li>
+                  <li class="li">two.two</li>
+                </ol>
+              </li>
+              <li class="li">three
+                <ol class="ol">
+                  <li class="li">three.one</li>
+                  <li class="li">three.two
+                    <ol class="ol">
+                      <li class="li">three.two.one</li>
+                    </ol>
+                </ol>
+                </li>
+            </ol>
+          </section>
         </section>
 
         <section data-state="no-toc-progress">
@@ -86,50 +186,93 @@
             <a href="https://rajgoel.github.io/reveal.js-demos/chart-demo.html">Live Demo</a>
           </section>
         </section>
-        <section data-state="no-toc-progress">
-          <h3 class="no-toc-progress">Reveal.js-Title-Footer</h3>
-          <h4>Footer
-            <strong>don't</strong> showing title for Reveal.js HTML presentations</h4>
-          <p>
-            <small>Thanks to create plugin
-              <a href="https://github.com/e-gor">Igor Leturia
-                <em>e-gor</em>
-              </a> /
-              <a href="http://twitter.com/ileturia">@ileturia</a> /
-              <a href="http://eibar.org/blogak/e-gorblog">http://eibar.org/blogak/e-gorblog</a>
-            </small>
+        <section>
+          <h3 class="no-toc-progress">Reveal.js-Title-Footer - Plugin</h3>
+          <a href="https://github.com/e-gor/Reveal.js-Title-Footer">Repository
+          </a>
           </p>
         </section>
+
         <section>
-            <iframe class='modal-loader' onload="modal('myModal','myBtn')"></iframe>
-            <button id="myBtn">Open Modal</button>
+          <blockquote>
+            <q>Imagination is more importante than knowledge</q>
+          </blockquote>
         </section>
+
+        <section>
+          <iframe class='modal-loader' onload="modal('modal-show','btn-modal')"></iframe>
+          <button id="btn-modal">Open Modal</button>
+        </section>
+
+        <section>
+          <pre><code data-trim data-noescape>
+              public class Car(){
+                private Brand brand;
+                private Model model;
+                private Color color;
+
+                public Car(){}
+
+                public Car(Brand brandId, Model modelId, Color colorId){
+                  this.brand = brandId;
+                  this.model = modelid;
+                  this.color = colorId;
+                }
+              }
+            </code></pre>
+        </section>
+
       </div>
     </div>
-     <div id="myModal" class="modal">
-        <div class="modal-content">
+
+    <!-- Modal Section -->
+    <!-- Your modals here -->
+    <div id="modal-show" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
           <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
+          <h2>Modal Title</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
         </div>
       </div>
+    </div>
+    <!-- End of Modal Section -->
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
-    <script src="plugin/modal/modal.js"></script>
     <!-- Use this script to active mouse click -->
-    <!-- <script src="js/mouse-click.js"></script> -->
     <script>
       Reveal.initialize({
+        // Slide aspect ratio
         width: 1280,
         height: 720,
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // The display mode that will be used to show slides
+        display: 'block',
+        // show controls of slides
         controls: true,
+        // show progress bar os slides
         progress: true,
+        // enable a anchor of slide number
         history: true,
+        // center content of slides
         center: true,
+        // slide transition type
         transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // position of controls
         controlsLayout: 'bottom-right', // edges or bottom-right
+        // accept mouse whell to transition of slides
         mouseWheel: true,
         // - (required) your allotted time for presentation
-        allottedTime: 20 * 60 * 1000, // 3 minutes
+        allottedTime: 15 * 60 * 1000, // 3 minutes
         // - (optional) height of page/time progress bar
         progressBarHeight: 3,
         // - (optional) bar color
@@ -141,6 +284,7 @@
           13: () => {
             ElapsedTimeBar.isPaused ? ElapsedTimeBar.resume() : ElapsedTimeBar.pause();
           },
+          // pause/resume time when Pause/Break is pressed
           19: () => {
             ElapsedTimeBar.isPaused ? ElapsedTimeBar.resume() : ElapsedTimeBar.pause();
           },
@@ -156,19 +300,11 @@
             }
           },
           {
-            src: 'plugin/markdown/marked.js',
-            condition: function () {
-              return !!document.querySelector('[data-markdown]');
-            }
+            src: 'plugin/elapsed-time-bar/elapsed-time-bar.min.js' //Progress time bar
           },
           {
-            src: 'plugin/markdown/markdown.js',
-            condition: function () {
-              return !!document.querySelector('[data-markdown]');
-            }
-          },
-          {
-            src: 'plugin/elapsed-time-bar/elapsed-time-bar.min.js'
+            src: 'plugin/notes/notes.js',
+            async: true // Slide notes
           },
           {
             src: 'plugin/highlight/highlight.js',
@@ -180,6 +316,12 @@
           {
             src: 'plugin/zoom-js/zoom.js',
             async: true
+          },
+          // { // Mouse click to next slide
+          //   src: 'js/mouse-click.js' 
+          // },
+          { // Modal plugin creator 
+            src: 'plugin/modal/modal.js'
           },
           {
             src: 'plugin/title-footer/title-footer.js',
@@ -198,6 +340,7 @@
         ],
       });
       Reveal.configure({
+        // Horizontal/Vertical slide number
         slideNumber: 'h.v'
       });
     </script>
